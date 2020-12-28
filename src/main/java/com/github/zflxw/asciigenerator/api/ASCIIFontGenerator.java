@@ -20,11 +20,11 @@ public class ASCIIFontGenerator {
     /**
      * Returns the given input as ascii art font. For size, you can use predefined sizes or a custom size.
      * Usage - getAsciiText("Hi", 30, ASCIIArtFont.ART_FONT_SERIF, "@");
-     * @param inputText
+     * @param inputText - the text to convert
      * @param textHeight - Use a predefined size or a custom type
      * @param asciiArtFont - Use one of the available fonts
      * @param symbol - Specify the character for printing the ascii art
-     * @throws Exception
+     * @return the convertes Text
      */
     public static String getAsciiText(String inputText, int textHeight, ASCIIArtFont asciiArtFont, String symbol) {
         String fontName = asciiArtFont.getValue();
@@ -56,11 +56,10 @@ public class ASCIIFontGenerator {
     /**
      * Prints ASCII art for the specified text. For size, you can use predefined sizes or a custom size.
      * Usage - printTextArt("Hi",30,ASCIIArtFont.ART_FONT_SERIF,"@");
-     * @param inputText
+     * @param inputText - the text to convert
      * @param textHeight - Use a predefined size or a custom type
      * @param asciiArtFont - Use one of the available fonts
      * @param symbol - Specify the character for printing the ascii art
-     * @throws Exception
      */
     public static void printTextArt(String inputText, int textHeight, ASCIIArtFont asciiArtFont, String symbol) {
         System.out.println(getAsciiText(inputText, textHeight, asciiArtFont, symbol));
@@ -69,8 +68,8 @@ public class ASCIIFontGenerator {
     /**
      * Convenience method for printing ascii text art.
      * Font default - Dialog,  Art symbol default - *
-     * @param inputText
-     * @param textHeight
+     * @param inputText - the text to convert
+     * @param textHeight - Use a predefined size or a custom type
      */
     public static void printTextArt(String inputText, int textHeight) {
         System.out.println(getAsciiText(inputText, textHeight, ASCIIArtFont.FONT_DIALOG, DEFAULT_ART_SYMBOL));
@@ -78,10 +77,10 @@ public class ASCIIFontGenerator {
 
     /**
      * Using the current font and current art text find the width of the full image
-     * @param textHeight
-     * @param inputText
-     * @param fontName
-     * @return
+     * @param textHeight - Use a predefined size or a custom type
+     * @param inputText - the text to convert
+     * @param fontName - get the font name by the predefined fonts
+     * @return - The image width
      */
     private static int findImageWidth(int textHeight, String inputText, String fontName) {
         BufferedImage bufferedImage = new BufferedImage(1, 1, BufferedImage.TYPE_INT_RGB);
@@ -92,9 +91,9 @@ public class ASCIIFontGenerator {
 
     /**
      * Find where the text baseline should be drawn so that the characters are within image
-     * @param graphics
-     * @param font
-     * @return
+     * @param graphics - the graphics element
+     * @param font - the font
+     * @return - the baseline position
      */
     private static int getBaselinePosition(Graphics graphics, Font font) {
         FontMetrics metrics = graphics.getFontMetrics(font);
