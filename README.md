@@ -2,6 +2,7 @@
 This project allows you to convert an input text to an ascii output. You can directly print the text in the console or get the ASCII text as String. 
 
 # Add to your project
+
 This project is only available as snapshot
 
 ### Maven
@@ -11,8 +12,7 @@ This project is only available as snapshot
     <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
     </repository>
 
-
-
+****
 
     <dependency>
     <groupId>com.github.zflxw</groupId>
@@ -21,17 +21,18 @@ This project is only available as snapshot
     </dependency>
 
 ### Gradle
+  
+     repositories {
+         maven {
+           name "Sonatype"
+           url "https://oss.sonatype.org/content/repositories/snapshots/"
+         }
+       }
+    
+     dependencies {
+        implementation 'com.github.zflxw:ASCII-Generator:1.0-SNAPSHOT'
+     }
 
-    repositories {
-      maven {
-        name "Sonatype"
-        url "https://oss.sonatype.org/content/repositories/snapshots/"
-      }
-    }
-
-   dependencies {
-      implementation 'com.github.zflxw:ASCII-Generator:1.0-SNAPSHOT'
-   }
 
 # Usage
     // this renders "Example" in Medium size and prints it directly in the console
