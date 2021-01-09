@@ -4,25 +4,25 @@ This project allows you to convert an input text to an ascii output. You can dir
 # Add to your project
 This project is only available as snapshot
 
-Maven:
+Maven
    <repository>
    <id>snapshots-repo</id>
    <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
    </repository>
 
-   <dependency>
-   <groupId>com.github.zflxw</groupId>
-   <artifactId>ASCII-Generator</artifactId>
-   <version>1.0-SNAPSHOT</version>
-   </dependency>
+    <dependency>
+    <groupId>com.github.zflxw</groupId>
+    <artifactId>ASCII-Generator</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    </dependency>
 
 Gradle:
-   repositories {
-     maven {
-       name "Sonatype"
-       url "https://oss.sonatype.org/content/repositories/snapshots/"
-     }
-   }
+    repositories {
+      maven {
+        name "Sonatype"
+        url "https://oss.sonatype.org/content/repositories/snapshots/"
+      }
+    }
 
    dependencies {
       implementation 'com.github.zflxw:ASCII-Generator:1.0-SNAPSHOT'
