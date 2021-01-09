@@ -4,11 +4,12 @@ This project allows you to convert an input text to an ascii output. You can dir
 # Add to your project
 This project is only available as snapshot
 
-Maven
-   <repository>
-   <id>snapshots-repo</id>
-   <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-   </repository>
+### Maven
+
+    <repository>
+    <id>snapshots-repo</id>
+    <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+    </repository>
 
     <dependency>
     <groupId>com.github.zflxw</groupId>
@@ -16,7 +17,8 @@ Maven
     <version>1.0-SNAPSHOT</version>
     </dependency>
 
-Gradle:
+### Gradle
+
     repositories {
       maven {
         name "Sonatype"
