@@ -12,6 +12,8 @@ This project is only available as snapshot
     </repository>
 
 
+
+
     <dependency>
     <groupId>com.github.zflxw</groupId>
     <artifactId>ASCII-Generator</artifactId>
