@@ -11,6 +11,7 @@ This project is only available as snapshot
     <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
     </repository>
 
+
     <dependency>
     <groupId>com.github.zflxw</groupId>
     <artifactId>ASCII-Generator</artifactId>
