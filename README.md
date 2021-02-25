@@ -1,46 +1,51 @@
-# ASCII-Generator
+# ASCII Generator
+
 This project allows you to convert an input text to an ascii output. You can directly print the text in the console or get the ASCII text as String. 
 
 # Add to your project
-
-This project is only available as snapshot
-
 ### Maven
 
+ #### Add jitpack as repository
+
     <repository>
-    <id>snapshots-repo</id>
-    <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+		<id>jitpack.io</id>
+		<url>https://jitpack.io</url>
     </repository>
 
-****
+#### Add the dependency
 
     <dependency>
-    <groupId>com.github.zflxw</groupId>
-    <artifactId>ASCII-Generator</artifactId>
-    <version>1.0-SNAPSHOT</version>
+	    <groupId>com.github.zflxw</groupId>
+	    <artifactId>ASCII-Generator</artifactId>
+	    <version>1.0-SNAPSHOT</version>
     </dependency>
 
 ### Gradle
-  
-     repositories {
-         maven {
-           name "Sonatype"
-           url "https://oss.sonatype.org/content/repositories/snapshots/"
-         }
-       }
-    
-     dependencies {
-        implementation 'com.github.zflxw:ASCII-Generator:1.0-SNAPSHOT'
-     }
+#### Add jitpack as repository
+    repositories {
+        maven { url 'https://jitpack.io'}
+    }
+#### Add the dependency
+    dependencies {
+       implementation 'com.github.zflxw:ASCII-Generator:1.0-SNAPSHOT'
+    }
 
+# How does it work?
+Here is a quick example snippet, how to work with this Library
 
-# Usage
-    // this renders "Example" in Medium size and prints it directly in the console
-    ASCIIFontGenerator.printTextArt("Example", ASCIIFontGenerator.FONT_SIZE_MEDIUM);
- 
-The result:
+    public static void main(String[] args) {
+		/*
+		* Argument 1: The text to print (in this case "Example")
+		* Argument 2: The font size (in this case medium)	
+		*/
+		ASCIIFontGenerator.printTextArt("Example", ASCIIFontGenerator.FONT_SIZE_MEDIUM);
 
-![result](https://cdn.discordapp.com/attachments/722499400953233470/792880337071898655/unknown.png)
+		/*
+		* Argument 1: The text to print (in this case "Example")
+		* Argument 2: The font size (in this case medium)
+		* Argument 3: The font type (in this case "Monospaced")
+		* Argument 4: The symbol to print the text in (in this case "@", default: "*")
+		*/
+		ASCIIFontGenerator.printTextArt("Example", ASCIIFontGenerator.FONT_SIZE_MEDIUM, ASCIIArtFont.FONT_MONOSPACED, "@");
+	}
 
-# License
-Leave a look in the license file or the ASCIIFontGenerator Class for more information about the license
