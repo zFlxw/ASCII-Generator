@@ -17,7 +17,7 @@ This project allows you to convert an input text to an ascii output. You can dir
     <dependency>
 	    <groupId>com.github.zflxw</groupId>
 	    <artifactId>ASCII-Generator</artifactId>
-	    <version>1.0-SNAPSHOT</version>
+	    <version>1.0.0</version>
     </dependency>
 
 ### Gradle
@@ -27,7 +27,7 @@ This project allows you to convert an input text to an ascii output. You can dir
     }
 #### Add the dependency
     dependencies {
-       implementation 'com.github.zflxw:ASCII-Generator:1.0-SNAPSHOT'
+       implementation 'com.github.zflxw:ASCII-Generator:1.0.0'
     }
 
 # How does it work?
